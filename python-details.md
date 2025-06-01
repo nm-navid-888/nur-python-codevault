@@ -138,23 +138,154 @@ False
 True
 ```
 
-## 4. Type Casting (Conversion)
+## 5. Variable
+### 🧠 Concept: What is a Variable?
 
-###
+A **variable**:
+
+- Holds/stores a value.
+- Can be reused or updated later.
+- Has a **name**, a **value**, and uses the `=` **assignment operator**.
+---
+
+**Example:**
+
+```python
+name = 'Nur Mohammad'   # string value
+age = 30               # integer value
+```
+
+### 5.1 Assign and Print Variables
 **Code:**
 ```python
-print(int("5"))               # str to int
-print(float(10))              # int to float
-print(str(3.14))              # float to str
-print(bool(""))               # False (empty string is false)
-print(bool("Python"))         # True (non-empty string is true)
+# 1. Assign and Print Variables
+
+city = "Dhaka"
+temperature = 35
+
+print(city)
+print(temperature)
+```
+
+**Output:**
+```python
+Dhaka
+35
+```
+
+### 5.2 Change the Value of a Variable
+**Code:**
+```python
+# 2. Change the Value of a Variable
+
+language = "Python"
+print(language)
+
+language = "JavaScript"
+print(language)
+```
+
+**Output:**
+```python
+Python
+JavaScript
+```
+
+### 5.3 Multiple Variables in One Line
+**Code:**
+```python
+x, y, z = 5, 10, 15
+print(x)
+print(y)
+print(z)
 ```
 
 **Output:**
 ```python
 5
-10.0
-3.14
-False
-True
+10
+15
+```
+
+
+### 5.4 Assign Same Value to Multiple Variables
+**Code:**
+```python
+a = b = c = "Nur"
+print(a, b, c)
+```
+
+**Output:**
+```python
+Nur Nur Nur
+```
+
+### 5.5 Combine Variables in Print
+**Code:**
+```python
+first_name = "Nur"
+last_name = "Mohammad"
+full_name = first_name + " " + last_name
+
+print(full_name)
+```
+
+**Output:**
+```python
+Nur Mohammad
+```
+
+### 5.6 Variable Types
+**Code:**
+```python
+x = 100
+y = 99.5
+z = True
+name = "Nur"
+
+print(type(x))
+print(type(y))
+print(type(z))
+print(type(name))
+```
+
+**Output:**
+```python
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+<class 'str'>
+```
+
+
+### 5.7 Arithmetic with Variables
+**Code:**
+```python
+price = 100
+quantity = 3
+total = price * quantity
+
+print("Total price is:", total)
+```
+
+**Output:**
+```python
+Total price is: 300
+```
+
+### 5.8 Practice Challenge
+**Code:**
+```python
+# Define your details
+my_name = "Nur"
+my_age = 25
+my_country = "Bangladesh"
+
+# Print a message using those variables
+print(f"My name is {my_name}, I am {my_age} years old, and I live in {my_country}.")
+```
+
+**Output:**
+```python
+My name is Nur, I am 25 years old, and I live in Bangladesh.
 ```
