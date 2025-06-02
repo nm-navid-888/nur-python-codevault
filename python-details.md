@@ -573,3 +573,38 @@ True
 False
 False
 ```
+
+
+
+### 6.11 Example 4: With a Dictionary (Only checks keys)
+
+**Code:**
+```python
+person = {"name": "Nur", "age": 25}
+
+print("name" in person)        # True
+print("Nur" in person)         # False (value, not key)
+print("gender" not in person)  # True
+```
+
+**Output:**
+```python
+True
+False
+True
+```
+
+### 6.12 Challenge
+
+**Code:**
+```python
+fruits = ["apple", "banana", "cherry"]
+print("Apple" in fruits)
+print("banana" not in fruits)
+```
+
+**Output:**
+```python
+False
+False
+```
