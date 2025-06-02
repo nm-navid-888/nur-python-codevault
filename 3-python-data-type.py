@@ -24,7 +24,7 @@ print(type({"a": 1, "b": 2}))  # dict
 print("### Check all types in one go")
 values = ["Hi", 10, 3.14, False, None, [1,2], (3,4), {5,6}, {"a":1}]
 for val in values:
-    print(f"{val} is of type {type(val)}")
+print(f"{val} is of type {type(val)}")
 
 # f"{val} is of type {type(val)}" is an f-string, which allows inserting values directly into the string.
 # type(val) returns the data type (e.g., <class 'int'>, <class 'str'>).
