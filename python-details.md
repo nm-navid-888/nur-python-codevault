@@ -310,7 +310,7 @@ My name is Nur, I am 25 years old, and I live in Bangladesh.
 
 ## 6. Operators in Python
 
-## 📘 Arithmetic Operator Operation
+### 📘 Arithmetic Operator Operation
 
 | **Operator** | **Description**         | **Example** | **Result** |
 |--------------|-------------------------|-------------|------------|
@@ -408,7 +408,7 @@ Modulus: 1
 Power: 1000000
 ```
 
-## 📘 Comparison Operators Operation
+### 📘 Comparison Operators Operation
 
 | **Operator** | **Meaning**                | **Example** | **Result**   |
 |--------------|----------------------------|-------------|--------------|
@@ -508,7 +508,7 @@ True
 False
 False
 ```
-## ✅ Python Membership Operators
+### ✅ Python Membership Operators
 
 
 | **Operator** | **Meaning**                                                     |
@@ -607,4 +607,219 @@ print("banana" not in fruits)
 ```python
 False
 False
+```
+## 7. Conditions / Logics in Python
+
+### 7.1 Example 1: Age Category Checker
+
+**Code:**
+```python
+age = 17
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+
+```
+
+**Output:** Sample
+```python
+Enter the age =10
+You are a minor.
+
+Enter the age =18
+You are an adult.
+
+Enter the age =20
+You are an adult.
+```
+### 7.2 Example 2: Grading System
+
+**Code:**
+```python
+marks = int(input("Enter the mark ="))
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 80:
+    print("Grade B")
+elif marks >= 70:
+    print("Grade C")
+else:
+    print("Grade F")
+```
+
+**Output:**
+```python
+Enter the mark =94
+Grade A
+```
+### 7.3 Example 3: Number Checker (Positive, Negative, Zero)
+
+**Code:**
+```python
+num = int(input("Enter the number = "))
+
+if num > 0:
+    print("Positive Number")
+elif num < 0:
+    print("Negative Number")
+else:
+    print("Zero")
+```
+
+**Output:**
+```python
+Enter the number = -12
+Negative Number
+```
+
+
+### 7.4 Example 4: Even or Odd Checker
+
+**Code:**
+```python
+number = int(input("Enter the number = "))
+
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+```
+
+**Output:**
+```python
+Enter the number = 33
+Odd
+```
+### 7.5 Example 5: Login Simulation
+
+**Code:**
+```python
+username = input("Enter the username = ")
+password = input("Enter the password = ")
+
+if username == "admin" and password == "1234":
+    print("Login Successful")
+elif username != "admin" and password == "1234":
+    print("Invalid Username")
+elif username == "admin" and password != "1234":
+    print("Invalid Credentials")
+else:
+    print("Invalid Username and Password")
+```
+
+**Output:** Sample
+```python
+Enter the username = nur
+Enter the password = 1234
+Invalid Username
+
+Enter the username = admin
+Enter the password = 1234
+Login Successful
+```
+
+### 7.6 Example 6: Password Strength Checker
+
+**Code:**
+```python
+password = input("Enter the password = ")
+
+if len(password) >= 8:
+    print("Strong Password")
+else:
+    print("Weak Password")
+```
+
+**Output:**
+```python
+Enter the password = navid
+Weak Password
+```
+
+### 7.7 Python Calculator with Conditions
+
+Write a calculator program that takes three inputs from the user:
+
+Input1: A number (float or integer).
+Input2: A number (float or integer).
+Operator: A character representing a mathematical operation.
+Valid operators: +, -, *, /, %
+
+Validate that Input1 and Input2 are numbers.
+
+Validate that the operator is one of +, -, *, /, %.
+
+Use conditional statements to perform:
+
++ → Sum
+
+- → Difference
+
+* → Product
+
+* / → Quotient (Handle divide by zero)
+
+* % → Remainder (Handle divide by zero)
+
+Display the result or an appropriate error.
+
+**Code:**
+```python
+# Take inputs
+try:
+    input1 = float(input("Enter the first number: "))
+    input2 = float(input("Enter the second number: "))
+    operator = input("Enter the operator (+, -, *, /, %): ")
+
+    # Perform calculation
+    if operator == "+":
+        result = input1 + input2
+        print("The result is", result)
+    elif operator == "-":
+        result = input1 - input2
+        print("The result is", result)
+    elif operator == "*":
+        result = input1 * input2
+        print("The result is", result)
+    elif operator == "/":
+        if input2 == 0:
+            print("Error: Division by zero is not allowed.")
+        else:
+            result = input1 / input2
+            print("The result is", result)
+    elif operator == "%":
+        if input2 == 0:
+            print("Error: Division by zero is not allowed.")
+        else:
+            result = input1 % input2
+            print("The result is", result)
+    else:
+        print("Invalid operator. Please use one of +, -, *, /, %.")
+
+except ValueError:
+    print("Error: Please enter valid numbers.")
+
+```
+
+**Output:**
+```python
+Enter the first number: 5
+Enter the second number: 6
+Enter the operator (+, -, *, /, %): +
+The result is 11.0
+```
+
+### 7.6 
+
+**Code:**
+```python
+
+```
+
+**Output:**
+```python
+
 ```
