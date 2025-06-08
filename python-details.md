@@ -812,14 +812,124 @@ Enter the operator (+, -, *, /, %): +
 The result is 11.0
 ```
 
-### 7.6 
+
+## 8. Understanding mutable vs. immutable data type
+
+### 8.1 Mutable Data Types (List)
+
 
 **Code:**
 ```python
-
+# List (Mutable)
+fruits = ["apple", "banana"]
+fruits.append("cherry")
+print(fruits)  # ['apple', 'banana', 'cherry']
 ```
 
 **Output:**
 ```python
+['apple', 'banana', 'cherry']
+```
 
+### 8.2 Mutable Data Types (Dictionary)
+
+
+**Code:**
+```python
+# Dictionary (Mutable)
+student = {"name": "Nur", "age": 22}
+student["grade"] = "A"
+print(student)  # {'name': 'Nur', 'age': 22, 'grade': 'A'}
+```
+
+**Output:**
+```python
+{'name': 'Nur', 'age': 22, 'grade': 'A'}
+```
+
+### 8.3 Mutable Data Types (Set)
+
+
+**Code:**
+```python
+# Set (Mutable)
+
+colors = {"red", "blue"}
+colors.add("green")
+print(colors)  # {'red', 'blue', 'green'}
+```
+
+**Output:**
+```python
+{'blue', 'red', 'green'}
+```
+
+### 8.4 Immutable Data Types (Integer)
+
+
+**Code:**
+```python
+# Integer (Immutable)
+
+x = 5
+print(id(x))  # memory address of x
+x += 1
+print(id(x))  # different address — new object created
+```
+
+**Output:**
+```python
+11754024
+11754056
+```
+
+### 8.5 Immutable Data Types (String)
+
+
+**Code:**
+```python
+# String (Immutable)
+
+greeting = "Hello"
+print(greeting.upper())   # returns new string
+print(greeting)           # original string unchanged
+```
+
+**Output:**
+```python
+HELLO
+Hello
+```
+
+### 8.6 Immutable Data Types (Tuple)
+
+
+**Code:**
+```python
+# String (Immutable)
+
+greeting = "Hello"
+print(greeting.upper())   # returns new string
+print(greeting)           # original string unchanged
+```
+
+**Output:**
+```python
+TypeError: 'tuple' object does not support item assignment
+```
+
+
+### 8.7 Immutable Data Types (Frozen Set)
+
+**Code:**
+```python
+# Frozen Set (Immutable)
+
+vowels = frozenset({"a", "e", "i","o","u"})
+vowels.add("y") # Error: frozenset does not support add()
+```
+
+**Output:**
+```python
+AttributeError: 'frozenset' object has no attribute 'add'
 ```
