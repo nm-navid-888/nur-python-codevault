@@ -968,6 +968,8 @@ They help you write efficient programs that logically and systematically manipul
 
 ### 13.1  Python Data Structures (list) 
 
+- **List:** Use when you need a sequence of elements where duplicates are allowed and order matters.
+
 **Code:**
 ```python
 fruits = ["apple", "banana", "cherry", "banana"]
@@ -985,6 +987,9 @@ print(fruits.count("banana"))
 ```
 
 ### 13.2  Python Data Structures (tuple) 
+
+- **Tuple:** Choose when you need an ordered, immutable collection, like
+coordinates.
 
 **Code:**
 ```python
@@ -1011,6 +1016,8 @@ print(coordinates)             # (10.0, 20.5, 30.0)
 
 
 ### 13.3  Python Data Structures (dictionary) 
+
+- **Dictionary:** Ideal for key-value pairs where fast lookups by key are necessary.
 
 **Code:**
 ```python
@@ -1041,6 +1048,8 @@ print(values_list)             # ['Alice', 'Dhaka']
 
 
 ### 13.4  Python Data Structures (set) 
+
+- **Set:** Best for collections where duplicates need to be removed automatically.
 
 A set is:
 
@@ -1104,6 +1113,7 @@ False
 
 ### 13.5  Python Data Structures (Deque) 
 
+- **Deque:** Useful when you need to add or remove items from both ends quickly.
 - **Deque** deque stands for double-ended queue.
 - **Property** It allows fast appends and pops from both ends (left and right).
 
@@ -1149,6 +1159,7 @@ deque([-1, 0, 1, 2, 3, 4])
 
 ### 13.6  Python Data Structures (counter) 
 
+- **Counter:** Perfect for frequency counting or tallying elements.
 - Imports the Counter class from the collections module.
 - Counter is a special dictionary subclass for counting hashable objects.
 
@@ -1177,6 +1188,8 @@ Counter({'A': 3, 'B': 2, 'C': 1})
 
 ### 13.7  Python Data Structures (Heap) 
 
+- **Heap:** Ideal for priority-based tasks, like scheduling or finding
+minimum/maximum values.
 - heapq provides functions to create and manage heaps (priority queues).
 - In Python, it's always a min-heap (smallest item comes first).
 
