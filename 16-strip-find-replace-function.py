@@ -31,3 +31,9 @@ text = "Hello, World!"
 check = "World" in text
 print("Contains 'World':", check)
 
+#=========Problem 16.5===========#
+# Problem 16.5: Splitting a String
+
+text = "apple,banana,cherry"
+fruits = text.split(",")
+print("Split list:", fruits) # Output: Split list: ['apple', 'banana', 'cherry']
